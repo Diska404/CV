@@ -17,6 +17,6 @@ Klik tombol di bawah ini untuk melihat CV versi Web Interaktif:
 
 Berikut adalah Curriculum Vitae terbaru saya.
 
-![Tampilan CV Saya](127.0.0.1_5501-CV - Diska Kurnia Azzahra Putra-fpscreenshot.jpeg)
+![Tampilan CV Saya](CV .jpg)
 
 [Klik di sini untuk versi Website Interaktif](https://diska404.github.io/CV)
