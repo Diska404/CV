@@ -12,6 +12,6 @@ Saya berfokus pada pengembangan *software* (Python), modifikasi *hardware*, dan 
 ### 📄 Lihat CV Lengkap Saya
 Klik tombol di bawah ini untuk melihat CV versi Web Interaktif:
 
-[![Lihat CV Online](https://img.shields.io/badge/Lihat_CV_Online-Blue?style=for-the-badge&logo=github)](https://diska404.github.io/CV/)
+[![Lihat CV Online](https://img.shields.io/badge/Lihat_CV_Online-Blue?style=for-the-badge&logo=github)](https://Diska404.github.io/CV/)
 
 *(Ganti NAMA-REPO-ANDA dengan nama repository yang Anda buat tadi)*
