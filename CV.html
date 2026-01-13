@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Diska Kurnia Azzahra Putra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #525659; /* Latar belakang abu-abu saat preview */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        /* Setting Kertas A4 */
+        .cv-container {
+            width: 210mm; 
+            min-height: 297mm;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            display: grid;
+            grid-template-columns: 32% 68%; /* Pembagian Kolom Kiri & Kanan */
+        }
+        
+        /* --- SIDEBAR (KIRI) --- */
+        .sidebar {
+            background-color: #1e272e; /* Warna Gelap Elegan */
+            color: white;
+            padding: 30px 20px;
+            text-align: left;
+        }
+
+        /* Foto Profil */
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 4px solid #feca57; /* Lingkaran Kuning Emas */
+            
+            /* LINK FOTO ANDA */
+            background-image: url('https://ecampus3.pelitabangsa.ac.id/pb/f/pb/96901/thumbnail_IMG_5890_4.png');
+            
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .sidebar h2 {
+            font-size: 13pt;
+            border-bottom: 2px solid #feca57;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #feca57;
+        }
+
+        /* Kontak & Info */
+        .info-list p {
+            font-size: 9.5pt;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            color: #d2dae2;
+        }
+        .info-list i {
+            width: 25px;
+            font-size: 14px;
+            text-align: center;
+            margin-right: 8px;
+        }
+        .info-list a { color: #d2dae2; text-decoration: none; transition: 0.3s; }
+        .info-list a:hover { color: #feca57; }
+
+        /* Pewarnaan Ikon Brand */
+        .fa-youtube { color: #ff0000; }
+        .fa-linkedin { color: #0077b5; }
+        .fa-github { color: #ffffff; }
+        .fa-whatsapp { color: #25d366; }
+        .fa-python { color: #306998; }
+        .fa-android { color: #3ddc84; }
+        .fa-microchip { color: #feca57; }
+        .fa-video { color: #e056fd; }
+
+        /* List Skill */
+        .skill-list li {
+            list-style: none;
+            margin-bottom: 8px;
+            font-size: 9.5pt;
+            display: flex;
+            align-items: center;
+        }
+        .skill-list i { margin-right: 10px; width: 20px; text-align: center; }
+
+        /* --- MAIN CONTENT (KANAN) --- */
+        .main-content {
+            padding: 35px;
+            color: #333;
+        }
+
+        .header-name h1 {
+            font-size: 26pt;
+            text-transform: uppercase;
+            color: #1e272e;
+            line-height: 1.1;
+            letter-spacing: 1px;
+        }
+        .header-name h3 {
+            font-size: 12pt;
+            color: #e67e22; /* Oranye */
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .summary {
+            font-size: 10pt;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1e272e;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i { margin-right: 10px; color: #e67e22; }
+
+        .item { margin-bottom: 18px; }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .role { font-weight: bold; font-size: 11pt; color: #1e272e; }
+        .company { font-style: italic; color: #7f8c8d; font-size: 10pt; }
+        .date { font-size: 9pt; color: #95a5a6; background: #ecf0f1; padding: 2px 6px; border-radius: 4px; }
+        
+        .desc ul { margin-left: 20px; margin-top: 5px; }
+        .desc li { font-size: 10pt; margin-bottom: 3px; color: #444; }
+
+        /* Print Settings */
+        @media print {
+            body { background-color: white; padding: 0; }
+            .cv-container { box-shadow: none; width: 100%; height: auto; }
+            /* Pastikan background warna tercetak */
+            -webkit-print-color-adjust: exact; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <div class="sidebar">
+            <div class="profile-photo"></div>
+            
+            <h2>Kontak</h2>
+            <div class="info-list">
+                <p><i class="fas fa-map-marker-alt"></i> Bekasi, Jawa Barat</p>
+                <p><i class="fas fa-envelope"></i> email.anda@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +62 8XX-XXXX-XXXX</p>
+                <p><a href="#"><i class="fab fa-linkedin"></i> linkedin.com/in/diska</a></p>
+                <p><a href="#"><i class="fab fa-github"></i> github.com/Diska404</a></p>
+                <p><a href="https://youtube.com/c/raizei"><i class="fab fa-youtube"></i> youtube.com/c/raizei</a></p>
+            </div>
+
+            <h2>Hard Skills</h2>
+            <ul class="skill-list">
+                <li><i class="fab fa-python"></i> Python Development</li>
+                <li><i class="fas fa-code"></i> C++ / HTML / CSS</li>
+                <li><i class="fas fa-microchip"></i> IoT & Arduino</li>
+                <li><i class="fas fa-wrench"></i> PC Assembly & Repair</li>
+                <li><i class="fab fa-android"></i> Android Root/Custom ROM</li>
+            </ul>
+
+            <h2>Creative Tools</h2>
+            <ul class="skill-list">
+                <li><i class="fas fa-video"></i> DaVinci Resolve</li>
+                <li><i class="fas fa-film"></i> Adobe Premiere & AE</li>
+                <li><i class="fas fa-camera"></i> OBS Studio</li>
+                <li><i class="fas fa-image"></i> Photoshop</li>
+            </ul>
+
+            <h2>Bahasa</h2>
+            <ul class="skill-list">
+                <li><i class="fas fa-flag"></i> Indonesia (Native)</li>
+                <li><i class="fas fa-book"></i> Inggris (Passive)</li>
+                <li><i class="fas fa-language"></i> Jepang (Basic)</li>
+            </ul>
+
+            <h2>Hobi</h2>
+            <ul class="skill-list">
+                <li><i class="fas fa-gamepad"></i> Game Strategy</li>
+                <li><i class="fas fa-bolt"></i> DIY Electronics</li>
+                <li><i class="fas fa-fist-raised"></i> Karate</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="header-name">
+                <h1>Diska Kurnia<br>Azzahra Putra</h1>
+                <h3>Python Developer | IoT Enthusiast | Content Creator</h3>
+            </div>
+
+           <div class="summary">
+                Saya adalah mahasiswa Teknik Informatika Universitas Pelita Bangsa yang menjalani keseharian dengan keseimbangan antara teknologi, kreativitas, dan disiplin fisik. Di luar jam kuliah, saya aktif membuat dan mengedit video serta bermain <i>game</i>, namun ketertarikan teknis saya terletak pada rekayasa sistem dan eksperimen DIY—mulai dari memodifikasi Android (<i>Rooting, Custom ROM, Performance Tuning</i>) hingga eksplorasi Linux Mobile.
+                <br><br>
+                Saya menjalani rutinitas harian yang sangat terstruktur: merancang alat sepulang kuliah, menjaga kebugaran fisik melalui lari sore dan <i>gym</i> hingga malam hari, serta menyeimbangkannya dengan kegiatan spiritual (mengaji) selepas Maghrib. Waktu luang atau hari libur saya dedikasikan penuh untuk memperbarui proyek <i>open-source</i>, mengedit video, atau sekadar merancang alat baru.
+                <br><br>
+                Secara personal, saya adalah pribadi yang santai, mudah beradaptasi, dan sangat menikmati proses bekerja secara mandiri. Saya memilih gaya hidup <i>low-profile</i> dengan membatasi interaksi media sosial (jarang menggunakan Facebook dsb) untuk menjaga fokus, dan lebih memilih YouTube sebagai sarana relaksasi maupun pembelajaran.
+            </div>
+
+            <div class="section-title"><i class="fas fa-briefcase"></i> Pengalaman Profesional</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Freelance Digital Artist & Editor</span>
+                    <span class="date">2020 – 2021</span>
+                </div>
+                <div class="company">Self-Employed (Remote / International)</div>
+                <div class="desc">
+                    <ul>
+                        <li>Menjalankan jasa "Ghost Production" (White Label) untuk konten AMV Anime.</li>
+                        <li>Mendapatkan kontrak komersial (DP $250 + Royalti 45% bulanan).</li>
+                        <li>Melakukan negosiasi lisensi hak cipta penuh kepada klien.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-laptop-code"></i> Proyek Utama</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">OTRCore (Optical Text Recognition)</span>
+                    <span class="date">Python Project</span>
+                </div>
+                <div class="company">Lead Developer | Open Source</div>
+                <div class="desc">
+                    <ul>
+                        <li>Mengembangkan tool penerjemah game PC <i>real-time</i> berbasis Python.</li>
+                        <li>Mengintegrasikan Tesseract OCR untuk menangkap teks layar secara instan.</li>
+                        <li>Fitur "Box Translation" untuk akurasi tinggi pada area spesifik.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Auto Sentry Security System</span>
+                    <span class="date">IoT Project</span>
+                </div>
+                <div class="company">Team Leader & Hardware Engineer</div>
+                <div class="desc">
+                    <ul>
+                        <li>Merancang sistem pertahanan area otomatis menggunakan sensor gerak.</li>
+                        <li>Modifikasi pemicu elektronik pada unit uji coba untuk respon otomatis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-graduation-cap"></i> Pendidikan</div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">Universitas Pelita Bangsa</span>
+                    <span class="date">2022 – Sekarang</span>
+                </div>
+                <div class="company">S1 Teknik Informatika</div>
+                <div class="desc">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="role">SMA (SMAN 1 Cibarusah)</span>
+                    <span class="date">2019 – 2022</span>
+                </div>
+                <div class="company">Jurusan IPA</div>
+                <div class="desc">
+                    <ul>
+                        <li>Aktif di Ekstrakurikuler IT (Informasi Teknologi).</li>
+                    </ul>
+                </div>
+                <div class="item-header">
+                    <span class="role">SMP (SMP 3 Cibarusah)</span>
+                    <span class="date">2016 – 2019</span>
+                </div>
+                <div class="desc">
+                    <ul>
+                        <li>Aktif di Ekstrakurikuler KIR (Karya Ilmiah Remaja).</li>
+                    </ul>
+                </div>
+                <div class="item-header">
+                    <span class="role">SD (SD 02 Cibarusah)</span>
+                    <span class="date">2010 – 2016</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
